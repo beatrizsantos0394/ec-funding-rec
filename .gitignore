@@ -1,0 +1,31 @@
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Virtual environments
+.venv/
+venv/
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+.ipynb_checkpoints/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# raw/ and downloads are large binary CORDIS exports — don't version them,
+# scripts/setup_data_folder.py regenerates this from your local zips
+data/raw/downloads/
+data/raw/cordis_horizon/*.xlsx
+data/raw/complexity/
+data/raw/mapping/
+
+# disposable/regeneratable per docs/PROJECT_STRUCTURE.md rule 2
+data/processed/
+results/

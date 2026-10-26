@@ -1,0 +1,10 @@
+pandas
+numpy
+scipy
+scikit-learn
+openpyxl
+openai
+ecomplexity
+python-dotenv
+playwright
+pytest
