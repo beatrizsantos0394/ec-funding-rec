@@ -1,4 +1,4 @@
-# Strategic Diversification Paths — code
+# ECfunding recommender
 ```
 company description (LLM + web search)           modules/hs22_enrichment.py
         ↓
@@ -22,7 +22,7 @@ Commands are for **Windows PowerShell**, run from the project folder (the one co
 
 ---
 
-## Part A — Set up (once)
+## Part A - Set up (once)
 
 ### Step 1. Install
 You need Python 3.10 or newer and Microsoft Edge (already on Windows 10/11).
@@ -57,7 +57,7 @@ The first line must be this folder, the second your endpoint, the third `True`.
 
 ---
 
-## Part B — Get the data (once)
+## Part B - Get the data (once)
 
 Nothing in `data/` is in git. Create it in these steps.
 
@@ -123,7 +123,7 @@ python -c "import modules.policy_translation as p; print(len(p.load_hs22_to_nace
 This must print a number (the rows of the HS22 → NACE mapping, about 14,700 with the full UNSD tables) and not an error.
 ---
 
-## Part C — Run the pipeline
+## Part C - Run the pipeline
 
 ### Step 10. Try 3 companies first
 A full run makes many LLM and web-search calls per company, and the workbook is written only at the very end (a crash loses the run). Test with 3 companies:
@@ -152,7 +152,7 @@ Each run writes a new `results\Recommender_results_N.xlsx`; nothing is overwritt
 
 ---
 
-## Part D — Read the results
+## Part D - Read the results
 
 ### Step 12. The workbook
 | Sheet | Contents |
